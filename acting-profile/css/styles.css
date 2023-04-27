@@ -1,0 +1,413 @@
+/********w************
+    
+    Project 4 Stylesheet
+    Name: David Lange
+    Date: 2023-04-26
+    Description: Project 4 CSS
+
+*********************/
+
+html,
+body,
+section,
+p,
+header,
+nav,
+footer,
+div,
+article,
+aside,
+ol,
+ul,
+li,
+h1,
+h2,
+h3,
+h6 {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-image: linear-gradient(#fff, #000);
+    background-repeat: no-repeat;
+}
+
+#container {
+	width: 80%;
+	background-color: #ffffff;
+	border-radius: 8px;
+	margin: 10px auto;
+	padding: 10px;
+	box-shadow: 1px 1px 2px #a2a2a2, -1px -1px 2px #a2a2a2;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: url(/images/background.jpg);
+    background-size: cover;
+}
+
+a{ /*Links*/
+	text-decoration: none;
+	color: #afafaf;
+}
+
+a:hover{
+    color: #ffa7fe;
+}
+
+#header{
+	background-image: linear-gradient(to bottom, rgba(0, 0, 0.5), rgba(255, 255, 255, 0.5));
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 0px;
+    border-radius: 8px;
+	height: 200px;
+	color: white;
+	margin-bottom: 0px;
+    width: 90%;
+    margin: auto;
+}
+
+	#header h1{
+		font-family: 'Open Sans', sans-serif;
+		font-size: 30px;
+		font-weight: 600;
+		padding: 40px 27px;
+		letter-spacing: 5px;;
+        
+	}
+
+    #header h2{
+        font-family: 'Open Sans', sans-serif;
+        font-size: 25px;
+        font-weight: 500;
+        padding: 0px 0px 0px 45px;
+        letter-spacing: 3px;
+        color: #ffa7fe;
+    }
+
+#navigation{
+	width: 100%;
+    display: inline-block;
+}
+
+	#navigation nav{
+		justify-content: space-evenly;
+		height: 16.5px;
+	}
+
+	#navigation nav ul{
+        padding-top: 30px;
+        text-align: center;
+        width: auto;
+	}
+
+	#navigation nav ul li{
+		list-style: none;
+        display: inline;
+        padding: 10px 40px;
+		font-size: 15px;
+        border: 0px solid;
+        border-radius: 5px;
+        margin: 10px 150px;
+        width: auto;
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0.5), rgba(255, 255, 255, 0.5));
+	}
+
+    #navigation ul li:hover{
+        background-color: #ffa7fe
+    }
+
+	#navigation ul li a{
+		color: white;
+		font-weight: 500;
+	}
+
+    #navigation ul li a:hover{
+        color: #ffa7fe;
+        
+    }
+
+	/*#navigation nav ul li:not(:last-child)::after{
+		content: "|";
+		padding: 8px;
+		color: black;
+		text-shadow: 1px 0px  white;
+	}*/
+
+#aside{
+	width: 177px;
+    height: 180px;
+	flex-shrink: 0;
+    padding-top: 10px;
+    margin-top: 22.5px;
+    border: 0px solid;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.7);
+}	
+
+	#aside ul li
+	{
+		border-top: 1px solid #dfdede;
+		padding: 7px 0px 0px 7px;
+        list-style: none;
+		list-style-position: inside;
+		font-size: 10.5px;
+		font-weight: 600;
+		height: 28px;
+        color: white;
+	}
+
+	#maincontent ul li:first-child{
+		list-style: none;
+	}
+
+		#maincontent aside ul li a{
+			color: black;
+			letter-spacing: 0.2px;
+		}
+
+		#maincontent aside ul li a:hover{
+			background-color: #6caee1;
+		}
+
+ #maincontent{
+	display: flex;
+    padding-top: 50px;
+    color: white;
+ }
+
+ 	#maincontent #about{
+		padding: 5px 0px 0px 5px;
+        margin: 24px 0px 0px 20px;
+        background-color: rgba(0,0,0,0.7);
+        width: 90%;
+        border: 0px solid;
+        border-radius: 8px;
+	}
+
+	#biography{
+		margin: 0px 40px 0px 10px;
+		font-size: 13px;
+		padding: 10px 0px 0px;
+		line-height: 2.5;
+	}
+
+	#maincontent h2{
+		margin: 0px 0px 0px 10px;
+		padding: 0px 0px 5px;
+		font-size: 18px;
+        font-weight: 500;
+        color: #ffa7fe;
+        border-bottom: 1px white solid;
+	}
+
+	#biography a{
+		font-size: 15px;
+        color: white;
+		font-weight: 500;
+	}
+
+    #biography a:hover{
+        color: #ffa7fe;
+    }
+
+#secondblock{
+	display: flex;
+    border: 0px solid;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 90%;
+    margin: 10px 0px 0px 20px;
+}
+	#training{
+		padding: 15px 0px 0px 15px;
+		font-size: 13px;
+		line-height: 1.5;
+	}
+
+    #training h3{
+		font-size: 18px;
+        font-weight: 500;
+        border-bottom: 1px white solid;
+        color: #ffa7fe;
+    }
+
+	#training ul{
+		list-style: none;
+	}
+
+	#training ul li{
+		margin: 10px 0px 0px 0px;
+		padding: 3px;
+	}
+
+#rightblock{
+    display: flex;
+    float: right;
+	width: 100%;
+    height: 10%;
+	margin-right: 5px;
+    margin-top: 22px;
+    border: 3px solid transparent;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+}
+    #headshot{
+        width: 100%;
+        border-radius: 8px;
+    }
+
+footer{
+	text-align: center;
+	padding-top: 80px;
+
+}
+
+	footer ul li{
+		text-align: center;
+		list-style: none;
+		font-size: 10px;
+		display: inline;
+	}
+
+	footer ul li:not(:last-child):after{
+		content: "|";
+		padding: 4px;
+	}
+
+	.copyright{
+		font-size: 10.2px;
+		word-spacing: 0.5px;
+        color: #afafaf;
+	}
+
+	.address{
+		font-size: 10px;
+		color: #afafaf;
+		word-spacing: 1px;
+	}
+/******************************PROJECTS*******************************/
+#current{
+color: white;
+margin: 100px 0px 0px 80px;
+width: 80%;
+height: auto;
+border: 0px solid;
+border-radius: 8px;
+background-color: rgba(0, 0, 0, 0.7);
+}
+
+    #current h3{
+        margin: 10px 0px 0px 5px;
+        font-size: 18px;
+        font-weight: 500;
+        color: #ffa7fe;
+    }
+
+    #current ul{
+        list-style: none;
+        margin: 10px 0px 0px 5px;
+        line-height: 40px;
+    }
+
+#past{
+color: white;
+margin: 40px 0px 0px 80px;
+width: 80%;
+height: auto;
+border: 0px solid;
+border-radius: 8px;
+background-color: rgba(0, 0, 0, 0.7);
+}
+
+    #past h4{
+        margin: 10px 0px 0px 5px;
+        font-size: 18px;
+        font-weight: 500;
+        color: #ffa7fe;
+    }
+
+    #past h5{
+        margin: 15px 0px 0px 5px;
+        border-bottom: 1px solid white;
+        width: 15%;
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    #past h6{
+        margin: 15px 0px 0px 5px;
+        border-bottom: 1px solid white;
+        width: 15%;
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    #past ul{
+        list-style: none;
+        margin: 10px 0px 0px 5px;
+    }
+
+    #past ul li{
+        line-height: 40px;
+    }
+
+    #past a{
+        color: #feefbb;
+
+    }
+    #past a:hover{
+        color: #ffa7fe;
+    }
+#theatrepics{
+    margin: 20px 0px 0px 80px;
+    display: inline-block;
+    justify-content: space-evenly;
+    line-height: 30px;
+    color: white;
+    border: 0px solid;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.7);
+    height: auto;
+    width: 80%;
+    
+}
+    #rj
+    {
+        width: 45%;
+        padding: 5px 5px 5px 25px;
+        float: left;
+        border-radius: 8px;
+    }
+
+    #lotn{
+        width: 45%;
+        padding: 5px 25px 5px 5px;
+        float: right;
+        border-radius: 8px;
+    }
+
+/*************************CONTACT***************************/
+#contactinfo{
+    width: 50%;
+    height: auto;
+    border: 0px solid;
+    border-radius: 8px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    margin: auto;
+    margin-top: 100px;
+}
+    #contactinfo ul{
+        line-height: 40px;
+        list-style: none;
+    }
+
+    #contactinfo h3{
+        color: #ffa7fe;
+    }
+
+    .center{
+        text-align: center;
+    }
