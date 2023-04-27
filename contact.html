@@ -1,0 +1,84 @@
+<!-------------------
+
+    Project 4
+    Name: David Lange
+    Date: 2023-04-26
+    Description: Project 4 HTML
+
+--------------------->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>David Lange - Contact</title>
+        <link rel="stylesheet" href="styles.css" type="text/css">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+        <script src="formvalidation.js"></script>
+    </head>
+    <body>
+        <main id="container">
+            <header id="header">
+                <h1>David Lange</h1>
+                <h2>Actor</h2>
+            </header>
+            <div id="navigation">	
+                <nav>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="projects.html">PROJECTS</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </nav>
+            </div>  
+            <form id="contactform" action="index.html">
+                <fieldset id="contactinfo">
+                    <div class="mainform">
+                        <h3>Contact Information</h3>
+                        <ul>
+                            <li>
+                                <label for="fullname">Full Name</label>
+                                <input id="fullname" name="fullname" type="text" />
+                                <p class="inputError error" id="fullname_error">* Required field</p>
+                            </li>
+                            <li>
+                                <label for="phone">Phone Number</label>
+                                <input id="phone" name="phone" type="tel" />
+                                <p class="inputError error" id="phone_error">* Required field</p>
+                                <p class="inputError error" id="phoneformat_error">
+                                    * Invalid phone number
+                                </p>
+                            </li>
+                            <li>
+                                <label for="email">Email</label>
+                                <input id="email" name="email" type="text" />
+                                <p class="inputError error" id="email_error">* Required field</p>
+                                <p class="inputError error" id="emailformat_error">
+                                    * Invalid email address
+                                </p>
+                            </li>
+                            <li>
+                                <label for="comments">Comments</label>
+                                <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="clear"></div>
+                    <p class="center">
+                        <button type="submit" id="submit">Submit</button>
+                        <button type="reset" id="clear">Clear</button>
+                    </p>
+                </fieldset>
+            </form>
+            <footer id="footer">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="projects.html">Projects</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+				    <p class="copyright">Copyright @ 2023</p>
+				    <p class="address">Winnipeg, Manitoba, Canada</p>
+			</footer>
+        </main>
+    </body>
+</html>
